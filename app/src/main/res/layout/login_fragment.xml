@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_layout"
+    android:weightSum="9"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email_text"
+            android:autoText="false"
+            android:gravity="bottom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/password_text"
+            android:gravity="bottom" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Login"
+        android:id="@+id/login_button"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/or_login_layout"
+        android:weightSum="3"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/left_divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_toLeftOf="@+id/or_login_with_text"
+            android:layout_weight="1"
+            android:background="#37000000"
+            android:orientation="horizontal">
+        </RelativeLayout>
+
+        <TextView android:id="@+id/or_login_with_text"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="or login with"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/right_divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_toRightOf="@+id/or_login_with_text"
+            android:layout_weight="1"
+            android:background="#37000000"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:id="@+id/login_with_other_layout"
+        android:weightSum="2"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="7.5dp"
+            android:text="Facebook"
+            android:id="@+id/facebook_button" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="7.5dp"
+            android:text="Google"
+            android:id="@+id/google_button" />
+    </LinearLayout>
+
+</LinearLayout>
