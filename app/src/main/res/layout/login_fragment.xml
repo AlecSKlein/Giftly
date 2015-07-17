@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/login_layout"
-    android:weightSum="9"
-    android:padding="15dp">
+    android:weightSum="8"
+    android:padding="15dp"
+    android:background="@drawable/rounded_white_background">
 
     <LinearLayout
         android:orientation="vertical"
@@ -40,22 +41,52 @@
             android:gravity="bottom" />
     </LinearLayout>
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:paddingBottom="20dp">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Login"
+            android:id="@+id/login_button"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_color_button"/>
+    </LinearLayout>
+
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:text="Login"
-        android:id="@+id/login_button"
-        android:layout_gravity="center_horizontal" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Reset password"
+        android:id="@+id/reset_password_button"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rounded_color_button"
+        android:layout_marginBottom="2.5dp" />
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Register"
+        android:id="@+id/register_button"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rounded_color_button"
+        android:layout_marginTop="2.5dp" />
+<!--
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="0"
         android:id="@+id/or_login_layout"
         android:weightSum="3"
-        android:gravity="center">
+        android:gravity="center"
+        android:visibility="invisible">
 
         <RelativeLayout
             android:id="@+id/left_divider"
@@ -90,10 +121,11 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
+        android:layout_weight="0"
         android:id="@+id/login_with_other_layout"
         android:weightSum="2"
-        android:gravity="center">
+        android:gravity="center"
+        android:visibility="invisible">
 
         <Button
             android:layout_width="0dp"
@@ -111,5 +143,6 @@
             android:text="Google"
             android:id="@+id/google_button" />
     </LinearLayout>
+-->
 
 </LinearLayout>

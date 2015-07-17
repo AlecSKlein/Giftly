@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="10"
+    android:weightSum="9"
     tools:context=".MainActivity"
     android:id="@+id/main_layout">
 
@@ -24,7 +24,8 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="6"
-        android:id="@+id/login_frame_layout">
+        android:id="@+id/login_frame_layout"
+        android:padding="10dp">
         <fragment
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -33,16 +34,4 @@
             tools:layout="@layout/login_fragment" />
     </FrameLayout>
 
-    <FrameLayout
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:id="@+id/reset_register_frame_layout">
-        <fragment
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:name="com.giftly.giftly.ForgotRegisterFragment"
-            android:id="@+id/reset_register_fragment"
-            tools:layout="@layout/reset_register_fragment" />
-    </FrameLayout>
 </LinearLayout>
