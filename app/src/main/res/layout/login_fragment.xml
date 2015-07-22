@@ -12,6 +12,7 @@
         android:layout_height="match_parent"
         android:text="L\nO\nG\nI\nN"
         android:textSize="20sp"
+        android:id="@+id/login_button"
         android:background="@android:color/transparent">
     </Button>
 
